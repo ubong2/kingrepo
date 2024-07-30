@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card-header mb-3">
+    <h5 class="card-title text-center text-danger">Create an Account</h5>
+</div>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        {% include 'form.html' %}
+        <div class="d-grid">
+            <input type="submit" value="Register" class="btn btn-danger mt-2">
+        </div>
+        <p class="small">Already have an account? <a href="{% url 'user_login' %}">Log in</a></p>
+
+    </form>
+{% endblock %}

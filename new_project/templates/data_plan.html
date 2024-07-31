@@ -1,5 +1,0 @@
-<!-- data_plan_dropdown_list_options.html -->
-<option value="">---------</option>
-{% for data_plan in data_plans %}
-<option value="{{ data_plan.id }}">{{ data_plan.data_type.network }} - {{ data_plan.name }} - ₦{{ data_plan.price }} {{ data_plan.validity }}</option>
-{% endfor %}
